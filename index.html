@@ -155,10 +155,10 @@
         let msg = "ПОПРОБУЙ ЕЩЕ!";
 
         if (result[0] === result[1] && result[1] === result[2]) {
-            winAmount = result[0] === '7️⃣' ? this.#bet * 50 : this.#bet * 10;
+            winAmount = result[0] === '7️⃣' ? this.#bet * 5 : this.#bet * 3;
             msg = `ДЖЕКПОТ: +${winAmount}!`;
         } else if (result[0] === result[1] || result[1] === result[2] || result[0] === result[2]) {
-            winAmount = this.#bet * 2;
+            winAmount = this.#bet * 1.5;
             msg = `ВЫИГРЫШ: +${winAmount}!`;
         }
 
