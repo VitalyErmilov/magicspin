@@ -115,7 +115,7 @@
 
 
     async pay() {
-        const res = await fetch('https://telegramminiapps.pythonanywhere.com/get-invoice', {
+        const res = await fetch('https://telegramminiapps.pythonanywhere.com/get_invoice', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({ user_id: tg.initDataUnsafe.user?.id })
